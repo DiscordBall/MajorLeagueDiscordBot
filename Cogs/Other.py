@@ -30,6 +30,7 @@ class Other(commands.Cog):
     @commands.command(brief='Dad jokes',
                       description='Tells a dad joke.',
                       aliases=['joke', 'dadjoke'])
+    @commands.cooldown(1, 60, commands.BucketType.user)
     async def dad_joke(self, ctx):
         r = requests.get('https://icanhazdadjoke.com', headers={"Accept": "text/plain"})
         await ctx.send(r.text)

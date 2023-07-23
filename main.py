@@ -41,6 +41,9 @@ async def on_command_error(ctx, error):
     elif isinstance(error, commands.NoPrivateMessage):
         await ctx.send("This command cannot be done in private message.")
         return
+    elif isinstance(error, commands.CommandOnCooldown):
+        await ctx.send(f"Please wait {int(error.retry_after)} seconds.")
+        return
     else:
         await bot.get_channel(log_channel).send(error)
 
