@@ -41,4 +41,4 @@ magic_8_ball = [
             "That would be so fetch!",
         ]
 
-complaint_warning = "Thanks for submitting a complaint! All complaints are submitted anonymously and your name will be hidden from moderators, however the bot does have the ability to allow mods to send a response. Please note that in the interest of keeping this system from being abused, mods do have the ability to display your name. Doing so requires explicit approval from all five moderators, and will alert you immediately should this action be taken."
+complaint_warning = "All complaints are submitted anonymously and your name will be hidden from moderators, however the bot does have the ability to allow mods to send a response. Please note that in the interest of keeping this system from being abused, mods do have the ability to display your name. Doing so requires explicit approval from all five moderators, and will alert you immediately should this action be taken."
